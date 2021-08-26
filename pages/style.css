@@ -79,13 +79,14 @@ header {
   background-color: #fff;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 1em;
-  padding: 0.7em;
   display: flex;
-  width: 90%;
+  width: 100%;
+  height: fit-content;
 }
 
 .menu {
-  margin-bottom: 1em;
+  width: 80%;
+  padding: 0.7em;
 }
 
 .emenu:hover .menu {
@@ -103,16 +104,21 @@ header {
 .valid .fa-check-circle {
 }
 
+.descnprice h4
+{
+  margin:0px;
+  margin-top: 3em;
+}
+
 .check {
   visibility: hidden;
-  margin-left: -6em;
   width: 0em;
 }
 
 .emenu:hover .check {
   visibility: visible;
   margin-left: 0px;
-  width: 5em;
+  margin-left: 2em;
 }
 
 .valid {
@@ -121,7 +127,7 @@ header {
 
 .emenu:hover .valid {
   background-color: #99e2d0;
-  height: 4.8em;
+  height: 5em;
   width: 5em;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
   border-top-right-radius: 1em;
@@ -154,12 +160,6 @@ header {
   display: inline-block;
 }
 
-.descnprice {
-}
-
-.descnprice .h3 {
-}
-
 .menu h3 {
   font-family: "Roboto";
   font-weight: lighter;
@@ -175,10 +175,7 @@ header {
 .menu h4 {
   font-family: "Roboto";
   font-weight: bold;
-  margin: 0.15em 0px 0px 0px;
-  -ms-flex-align: end;
-  justify-content: end;
-  text-align: end;
+  margin: 1em 0px 0px 0px;
 }
 
 button {
