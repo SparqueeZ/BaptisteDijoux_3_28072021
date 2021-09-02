@@ -87,6 +87,7 @@ header {
 .menu {
   width: 80%;
   padding: 0.7em;
+  transition: width 0.6s;
 }
 
 .emenu:hover .menu {
@@ -113,33 +114,35 @@ header {
 .check {
   visibility: hidden;
   width: 0em;
+  margin-left: 0px;
 }
 
 .emenu:hover .check {
   visibility: visible;
-  margin-left: 0px;
-  margin-left: 2em;
+  margin-left: 100px;
 }
 
 .valid {
   transition: width 0.6s;
+  width: -0px;
 }
 
 .emenu:hover .valid {
   background-color: #99e2d0;
-  height: 5em;
-  width: 5em;
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 81px;
+  width: 81px;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   transition: all 1s ease-in-out;
   cursor: pointer;
+  float: right;
 }
 
 .emenu:hover .fa-check-circle {
   width: 1em;
   height: 1em;
   transition: transform 1s;
+  transition-delay: 0.3s;
   transform: rotate(0deg);
 }
 
@@ -194,7 +197,7 @@ footer {
   background-color: #353535;
   padding: 1.5em;
   position: absolute;
-  width: 88.5%;
+  width: 88.55%;
 }
 
 .logof {
