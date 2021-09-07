@@ -4,7 +4,7 @@
 @media screen and (max-width: 768px) {
   body /*Fond de la page entière*/ {
     font-family: "Roboto", sans-serif;
-    margin: 0;
+    margin: 0px;
   }
 
   header {
@@ -16,7 +16,7 @@
     width: 100%;
   }
 
-  .fa-arrow-left {
+  .back {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 1em;
@@ -224,6 +224,7 @@
     color: #fff;
     margin: 0px;
     margin-bottom: 0.5em;
+    text-decoration: none;
   }
 
   .footerelement :hover {
@@ -231,7 +232,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   body /*Fond de la page entière*/ {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -242,38 +243,44 @@
     box-shadow: 0px -4px 16px 5px rgba(0, 0, 0, 0.67);
     background-color: #fff;
     padding: 0px;
-    padding-bottom: 0.5em;
     width: 100%;
   }
 
-  .fa-arrow-left {
+  .back {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 1em;
     justify-content: flex-start;
-    width: 27%;
+    width: 0%;
     color: #353535;
   }
 
   .logo {
-    width: 35%;
+    width: 15%;
     padding-top: 1em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
+    margin: auto;
   }
 
   .img {
     width: 100%;
-    height: 20em;
+    height: 30em;
     background-image: url(images/restaurants/alafrancaise.jpg);
     background-position: center;
     background-size: cover;
+  }
+
+  .allmenus {
+    display: flex;
+    width: 90%;
+    margin: auto;
   }
 
   .content {
     width: 100%;
     background-color: #fff;
     border-radius: 3em;
-    margin: 3em 0px 0px 0px;
+    margin: -3em 0px 0px 0px;
     z-index: 1;
   }
 
@@ -346,7 +353,7 @@
   }
 
   .emenu:hover .check {
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .valid {
@@ -362,13 +369,13 @@
     width: 81px;
     cursor: pointer;
     float: right;
-    transition: width 0.46s ease-in-out;
+    transition: width 0.35s ease-in-out;
   }
 
   .emenu:hover .fa-check-circle {
     width: 1em;
     height: 1em;
-    transition: transform 1s;
+    transition: transform 0.4s;
     transition-delay: 0.2s;
     transform: rotate(0deg);
     margin-left: 1.1em;
@@ -452,6 +459,7 @@
     color: #fff;
     margin: 0px;
     margin-bottom: 0.5em;
+    text-decoration: none;
   }
 
   .footerelement :hover {
