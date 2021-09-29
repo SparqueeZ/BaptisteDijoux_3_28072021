@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   body /*Fond de la page entière*/ {
     font-family: "Roboto", sans-serif;
     margin: 0px;
@@ -49,16 +49,33 @@
   }
 
   .title {
-    display: flex;
-    width: 90%;
     font-family: "Shrikhand";
-    font-size: 1.2em;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .fill {
+    color: black;
+    cursor: pointer;
+    font-size: 1.7em;
+    max-height: 30px;
+    margin-top: 0.9em;
+  }
+
+  .fill:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
   }
 
   .bluebar {
-    background-color: aqua;
+    background-color: #99e2d0;
     width: 10%;
     height: 3px;
     margin-bottom: 1em;
@@ -99,10 +116,6 @@
     transition: width 0.6s;
   }
 
-  .emenu:hover .menu {
-    width: 60%;
-  }
-
   .fa-check-circle {
     color: #fff;
     margin-top: 1.2em;
@@ -111,17 +124,26 @@
     transform: rotate(-90deg);
   }
 
+  .descnprice {
+    margin-left: 0.4em;
+  }
+
+  .emenu:hover .descnprice {
+    margin-left: 0.5em;
+  }
+
   .descnprice h4 {
     margin: 0px;
     margin-top: 3em;
   }
 
   .check {
-    margin-left: 0px;
+    margin-left: 10px;
+    transition: all 0.46s;
   }
 
   .emenu:hover .check {
-    margin-left: 20px;
+    margin-left: 15%;
   }
 
   .valid {
@@ -131,7 +153,9 @@
   .emenu:hover .valid {
     background-color: #99e2d0;
     height: 81px;
-    width: 81px;
+    width: 150%;
+    margin: 0px;
+    margin-left: 10px;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     cursor: pointer;
@@ -146,11 +170,13 @@
     transition-delay: 0.2s;
     transform: rotate(0deg);
     margin-left: 1.1em;
+    transition: all 0.46s;
   }
 
   .emenu:hover .menu {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    width: 55%;
   }
 
   .menu h2 {
@@ -181,6 +207,84 @@
     font-family: "Roboto";
     font-weight: bold;
     margin: 1em 0px 0px 0px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .check {
+      margin-left: 0px;
+    }
+
+    .descnprice {
+      margin-left: 4em;
+    }
+
+    .emenu:hover .descnprice {
+      margin-left: 14em;
+    }
+
+    .emenu:hover .check {
+      margin-left: 20px;
+      width: 15%;
+    }
+
+    .valid {
+      width: -0px;
+    }
+
+    .emenu:hover .valid {
+      background-color: #99e2d0;
+      height: 81px;
+      width: 81px;
+      border-top-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+      cursor: pointer;
+      float: right;
+      transition: width 0.46s;
+    }
+
+    .emenu:hover .fa-check-circle {
+      width: 1em;
+      height: 1em;
+      transition: transform 1s;
+      transition-delay: 0.2s;
+      transform: rotate(0deg);
+      margin-left: 1.1em;
+    }
+
+    .emenu:hover .menu {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .menu h2 {
+      font-family: "Roboto";
+      font-weight: bolder;
+      margin: 0px 0px 0.5em 0px;
+      font-size: 120%;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+
+    .menu h3 {
+      font-family: "Roboto";
+      font-weight: lighter;
+      margin: 0px;
+      width: 100%;
+      font-size: 0.95em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+
+    .menu h4 {
+      font-family: "Roboto";
+      font-weight: bold;
+      margin: 1em 0px 0px 0px;
+    }
   }
 
   button {
@@ -233,7 +337,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   body /*Fond de la page entière*/ {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -286,16 +390,37 @@
   }
 
   .title {
-    display: flex;
-    width: 90%;
     font-family: "Shrikhand";
-    font-size: 1.2em;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .title h1 {
+    width: 10em;
+  }
+
+  .fill {
+    color: black;
+    cursor: pointer;
+    font-size: 1.7em;
+    max-height: 30px;
+    margin-top: 0.5em;
+  }
+
+  .fill:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
   }
 
   .bluebar {
-    background-color: aqua;
+    background-color: #99e2d0;
     width: 10%;
     height: 3px;
     margin-bottom: 1em;
@@ -351,10 +476,12 @@
 
   .check {
     margin-left: 0px;
+    transition: all 0.46s;
   }
 
   .emenu:hover .check {
     margin-left: 50px;
+    width: 20%;
   }
 
   .valid {
@@ -380,12 +507,13 @@
     transition-delay: 0.2s;
     transform: rotate(0deg);
     margin-left: 1.1em;
+    transition: all 0.46s;
   }
 
   .emenu:hover .menu {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 60%;
+    width: 62%;
   }
 
   .menu h2 {
