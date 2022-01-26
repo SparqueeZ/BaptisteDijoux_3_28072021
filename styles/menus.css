@@ -1,350 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
-.loader{
-  background-color: #fff;
-    width: 100%;
-    height: 100%;
-    line-height: 100%;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: loader 1s ease-in-out 1.5s forwards;
-}
-
-.dots span{
-  width: 25px;
-  height: 25px;
-  margin: 0 5px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  display: inline-block;
-  animation-name: test;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.dots span:nth-child(2){
-  background-color: #FF79DA;
-  animation-delay: 0.4s;
-}
-
-.dots span:nth-child(3){
-  background-color: #99E2D0;
-  animation-delay: 0.8s;
-}
-
-@keyframes test{
-  50%{
-      opacity: 0;
-      transform: scale(0.7) translateY(10px);
-  }
-}
-
-
-@keyframes loader {
-  from{
-    opacity: 100;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  body /*Fond de la page entière*/ {
+body /*Fond de la page entière*/ {
     font-family: "Roboto", sans-serif;
     margin: 0px;
-  }
-
-  header {
-    display: flex;
-    box-shadow: 0px -4px 16px 5px rgba(0, 0, 0, 0.67);
-    background-color: #fff;
-    padding: 0px;
-    padding-bottom: 0.5em;
-    width: 100%;
-    position: relative;
-  }
-
-  .back {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 1em;
-    justify-content: flex-start;
-    width: 27%;
-    color: #353535;
-  }
-
-  .logo {
-    width: 35%;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-  }
-
-  .rimg img {
-    width: 100%;
-    height: 20em;
-    object-fit: cover;
-  }
-
-  .content {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 3em;
-    margin: -3em 0px 0px 0px;
-    z-index: 1;
-  }
-
-  .title {
-    font-family: "Shrikhand";
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5em;
-    position: relative;
-    z-index: 1001;
-  }
-  
-  .fill {
-    color: black;
-    cursor: pointer;
-    font-size: 1.7em;
-    max-height: 30px;
-    margin-top: 0.9em;
-  }
-
-  .fill:hover {
-    animation: fill 0.3s ease-in-out;
-    display: inline-block;
-    opacity: 1;
-    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    font-weight: bold;
-  }
-
-  .bluebar {
-    background-color: #99e2d0;
-    width: 10%;
-    height: 3px;
-    margin-bottom: 1em;
-  }
-
-  .category {
-    margin: 0em 0px 4em 0px;
-    width: 90%;
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    animation: apear 1s;
-  }
-
-  .category h2 {
-    font-weight: lighter;
-    font-size: 1.1em;
-  }
-
-  .emenu {
-    background-color: #fff;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 1em;
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    margin-top: 1em;
-    overflow: hidden;
-  }
-
-  .emenu:hover {
-    cursor: pointer;
-  }
-
-  .menu {
-    width: 80%;
-    padding: 0.7em;
-    transition: width 0.6s;
-  }
-
-  .fa-check-circle {
-    color: #fff;
-    margin-top: 1.2em;
-    margin-left: 0em;
-    font-size: 1.5rem;
-    transform: rotate(-90deg);
-  }
-
-  .descnprice {
-    margin-left: 0.4em;
-  }
-
-  .emenu:hover .descnprice {
-    margin-left: 0.5em;
-  }
-
-  .descnprice h4 {
-    margin: 0px;
-    margin-top: 3em;
-  }
-
-  .check {
-    margin-left: 10px;
-    transition: all 0.46s;
-  }
-
-  .emenu:hover .check {
-    margin-left: 15%;
-  }
-
-  .valid {
-    width: -0px;
-  }
-
-  .emenu:hover .valid {
-    background-color: #99e2d0;
-    height: 81px;
-    width: 150%;
-    margin: 0px;
-    margin-left: 10px;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-    cursor: pointer;
-    float: right;
-    transition: width 0.46s;
-  }
-
-  .emenu:hover .fa-check-circle {
-    width: 1em;
-    height: 1em;
-    transition: transform 1s;
-    transition-delay: 0.2s;
-    transform: rotate(0deg);
-    margin-left: 1.1em;
-    transition: all 0.46s;
-  }
-
-  .emenu:hover .menu {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    width: 55%;
-  }
-
-  .menu h2 {
-    font-family: "Roboto";
-    font-weight: bolder;
-    margin: 0px 0px 0.5em 0px;
-    font-size: 120%;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-  }
-
-  .menu h3 {
-    font-family: "Roboto";
-    font-weight: lighter;
-    margin: 0px;
-    width: 100%;
-    font-size: 0.95em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-  }
-
-  .menu h4 {
-    font-family: "Roboto";
-    font-weight: bold;
-    margin: 1em 0px 0px 0px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    .check {
-      margin-left: 0px;
-    }
-
-    .descnprice {
-      margin-left: 4em;
-    }
-
-    .emenu:hover .descnprice {
-      margin-left: 14em;
-    }
-
-    .emenu:hover .check {
-      margin-left: 20px;
-      width: 15%;
-    }
-
-    .valid {
-      width: -0px;
-    }
-
-    .emenu:hover .valid {
-      background-color: #99e2d0;
-      height: 81px;
-      width: 81px;
-      border-top-right-radius: 1em;
-      border-bottom-right-radius: 1em;
-      cursor: pointer;
-      float: right;
-      transition: width 0.46s;
-    }
-
-    .emenu:hover .fa-check-circle {
-      width: 1em;
-      height: 1em;
-      transition: transform 1s;
-      transition-delay: 0.2s;
-      transform: rotate(0deg);
-      margin-left: 1.1em;
-    }
-
-    .emenu:hover .menu {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .menu h2 {
-      font-family: "Roboto";
-      font-weight: bolder;
-      margin: 0px 0px 0.5em 0px;
-      font-size: 120%;
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: inline-block;
-    }
-
-    .menu h3 {
-      font-family: "Roboto";
-      font-weight: lighter;
-      margin: 0px;
-      width: 100%;
-      font-size: 0.95em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: inline-block;
-    }
-
-    .menu h4 {
-      font-family: "Roboto";
-      font-weight: bold;
-      margin: 1em 0px 0px 0px;
-    }
   }
 
   button {
@@ -397,15 +56,8 @@
   .footerelement :hover {
     cursor: pointer;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  body /*Fond de la page entière*/ {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-  }
-
-  header {
+header {
     display: flex;
     box-shadow: 0px -4px 16px 5px rgba(0, 0, 0, 0.67);
     background-color: #fff;
@@ -437,7 +89,6 @@
   }
 
   .allmenus {
-    display: flex;
     width: 90%;
     margin: auto;
   }
@@ -494,7 +145,7 @@
 
   .category {
     margin: 0em 0px 4em 0px;
-    width: 30%;
+    width: 100%;
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -506,80 +157,93 @@
     font-size: 1.1em;
   }
 
-  .emenu {
-    background-color: #fff;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 1em;
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    margin-top: 1em;
+/*Fontcionnalités*/
+
+.menu h2{
+    white-space: nowrap;
     overflow: hidden;
-  }
+    text-overflow: ellipsis;
+}
 
-  .emenu:hover {
-    cursor: pointer;
-  }
 
-  .menu {
-    width: 80%;
-    padding: 0.7em;
-    transition: width 0.6s;
-  }
+.menu h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-  .fa-check-circle {
-    color: #fff;
-    margin-top: 1.2em;
-    margin-left: 0em;
-    font-size: 1.5rem;
-    transform: rotate(-90deg);
-  }
-
-  .descnprice h4 {
-    margin: 0px;
-    margin-top: 3em;
-  }
-
-  .check {
-    margin-left: 0px;
-    transition: all 0.46s;
-  }
-
-  .emenu:hover .check {
-    margin-left: 50px;
-    width: 20%;
-  }
-
-  .valid {
+.check{
+    width: 0%;
     background-color: #99e2d0;
-    width: 0px;
-    height: 81px;
-    cursor: pointer;
-  }
+    transition: all 0.5s ease-in-out;
+}
 
-  .emenu:hover .valid {
-    background-color: #99e2d0;
-    height: 81px;
-    width: 81px;
-    cursor: pointer;
-    float: right;
-    transition: width 0.35s ease-in-out;
-  }
+.emenu:hover .check{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
 
-  .emenu:hover .fa-check-circle {
+.emenu:hover .descnprice{
+    width: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .menu{
+    width: 45%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .fa-check-circle {
     width: 1em;
     height: 1em;
-    transition: transform 0.4s;
-    transition-delay: 0.2s;
-    transform: rotate(0deg);
-    margin-left: 1.1em;
-    transition: all 0.46s;
+    transition: all 1s;
+    transition-delay: 0.1s;
+    transform: rotate(360deg);
   }
 
-  .emenu:hover .menu {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    width: 62%;
+/*style*/
+
+.emenu{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 1em;
+    width:100%;
+    height: fit-content;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    
+}
+
+.descnprice{
+    justify-content: flex-end;
+    width: 10%;
+    padding: 1em;
+}
+
+
+.descnprice h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    width:100%;
+    transition: all 0.5s ease-in-out;
+    padding: 1em;
+    min-width: 50%;
+}
+
+.valid{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.fa-check-circle {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1em;
   }
 
   .menu h2 {
@@ -612,71 +276,305 @@
     margin: 1em 0px 0px 0px;
   }
 
-  button {
-    margin: 0.5em auto 7em auto;
-    background: linear-gradient(#ff79da, #9356dc);
-    padding: 1em 1.5em 1em 1.5em;
-    border: none;
-    border-radius: 3em;
-    color: #fff;
-    font-family: "Roboto";
-    width: 20%;
-    display: block;
-    box-shadow: 0px 0px 25px rgb(150, 150, 150);
-    transition: box-shadow 0.3s;
+  @keyframes apear {
+    from {
+      opacity: 0;
+      margin-top: 10em;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0em;
+    }
   }
 
-  button:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 25px rgb(100, 100, 100);
-    transition: box-shadow 0.3s;
-  }
-
-  footer {
-    background-color: #353535;
-    padding: 1.5em;
-  }
-
-  .logof {
-    width: 7em;
-    margin-bottom: 1em;
-  }
-
-  .footerelement {
-    display: flex;
-    color: #fff;
-  }
-
-  .footerelement p {
-    margin: 0px;
-    margin-bottom: 0.5em;
+  @media screen and (min-width: 1280px) {
+    body /*Fond de la page entière*/ {
+      font-family: "Roboto", sans-serif;
+      margin: 0px;
+    }
+  
+    header {
+      display: flex;
+      box-shadow: 0px -4px 16px 5px rgba(0, 0, 0, 0.67);
+      background-color: #fff;
+      padding: 0px;
+      padding-bottom: 0.5em;
+      width: 100%;
+      position: relative;
+    }
+  
+  .back {
+    margin-top: auto;
+    margin-bottom: auto;
     padding-left: 1em;
-    font-family: "Roboto";
+    justify-content: flex-start;
+    width: 0%;
+    color: #353535;
   }
 
-  .fa-utensils {
-    max-width: fit-content;
+  .logo {
+    width: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+  }
+  
+    .rimg img {
+      width: 100%;
+      height: 20em;
+      object-fit: cover;
+    }
+  
+    .content {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 3em;
+      margin: -3em 0px 0px 0px;
+      z-index: 1;
+    }
+  
+    .title {
+      font-family: "Shrikhand";
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5em;
+      position: relative;
+      z-index: 1001;
+    }
+    
+    .fill {
+      color: black;
+      cursor: pointer;
+      font-size: 1.7em;
+      max-height: 30px;
+      margin-top: 0.9em;
+    }
+  
+    .fill:hover {
+      animation: fill 0.3s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+    }
+  
+    .bluebar {
+      background-color: #99e2d0;
+      width: 10%;
+      height: 3px;
+      margin-bottom: 1em;
+    }
+  
+    .category {
+      margin: 0em 0px 4em 0px;
+      width: 90%;
+      background-color: #fff;
+      margin-left: auto;
+      margin-right: 3em;
+      animation: apear 1s;
+
+    }
+  
+    .category h2 {
+      font-weight: lighter;
+      font-size: 1.1em;
+    }
+  
+    .menu h2 {
+      font-family: "Roboto";
+      font-weight: bolder;
+      margin: 0px 0px 0.5em 0px;
+      font-size: 120%;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  
+    .menu h3 {
+      font-family: "Roboto";
+      font-weight: lighter;
+      margin: 0px;
+      width: 100%;
+      font-size: 0.95em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  
+    .menu h4 {
+      font-family: "Roboto";
+      font-weight: bold;
+      margin: 1em 0px 0px 0px;
+    }
+
+    .allmenus {
+        display: flex;
+        width: 90%;
+        margin: auto;
+      }
+      /*Fontcionnalités*/
+
+.menu h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.menu h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.check{
+    width: 0%;
+    background-color: #99e2d0;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .check{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .descnprice{
+    width: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .menu{
+    width: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emenu:hover .fa-check-circle {
+    width: 1em;
+    height: 1em;
+    transition: all 1s;
+    transition-delay: 0.1s;
+    transform: rotate(360deg);
   }
 
-  .footerelement2 {
+/*style*/
+
+.emenu{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 1em;
+    width:100%;
+    height: fit-content;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+}
+
+.descnprice{
+    justify-content: flex-end;
+    width: 30%;
+    padding: 1em;
+}
+
+
+.descnprice h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    width:70%;
+    transition: all 0.5s ease-in-out;
+    padding: 1em;
+    min-width: 60%;
+}
+
+.valid{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.fa-check-circle {
     color: #fff;
-    margin: 0px;
-    margin-bottom: 0.5em;
-    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 1em;
   }
 
-  .footerelement :hover {
-    cursor: pointer;
+  .menu h2 {
+    font-family: "Roboto";
+    font-weight: bolder;
+    margin: 0px 0px 0.5em 0px;
+    font-size: 120%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+
+  .menu h3 {
+    font-family: "Roboto";
+    font-weight: lighter;
+    margin: 0px;
+    width: 100%;
+    font-size: 0.95em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+  }
+
+  .menu h4 {
+    font-family: "Roboto";
+    font-weight: bold;
+    margin: 1em 0px 0px 0px;
   }
 }
 
-@keyframes apear {
-  from {
-    opacity: 0;
-    margin-top: 10em;
-  }
-  to {
-    opacity: 1;
-    margin-top: 0em;
-  }
+/*Version Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .emenu:hover .check{
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .emenu:hover .descnprice{
+        width: 10%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .emenu:hover .menu{
+        width: 50%;
+        transition: all 0.5s ease-in-out;
+    }
+    .emenu{
+        display: flex;
+        background-color: #fff;
+        margin-bottom: 1em;
+        width:100%;
+        height: fit-content;
+        overflow: hidden;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 1em;
+    }
+    .menu{
+        width:70%;
+        transition: all 0.5s ease-in-out;
+        padding: 1em;
+        min-width: 60%;
+    }
+    .descnprice{
+        justify-content: flex-end;
+        width: 30%;
+        padding: 1em;
+    }
 }
