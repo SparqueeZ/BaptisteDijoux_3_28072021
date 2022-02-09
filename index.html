@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>ohmyfood</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -13,12 +17,11 @@
 
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" 
+      rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,7 +40,7 @@
     </div>
     <header>
       <i class="fas fa-arrow-left"></i>
-      <img class="logo" alt="LogoOhMyFood" src="images/logo/ohmyfood.svg" />
+      <p class="logo">ohmyfood</p>
     </header>
 
     <section>
@@ -46,31 +49,31 @@
         <p class="location1">Paris, Belleville</p>
       </div>
       <div class="Explore">
-        <h3>Réservez le menu qui vous convient</h3>
-        <h4>
+        <h1>Réservez le menu qui vous convient</h1>
+        <h2>
           Découvrez des restaurants d'exception, séléctionnés par nos soins
-        </h4>
+        </h2>
         <button class="exbtn">Explorer nos restaurants</button>
       </div>
-      <h1 class="title"><strong>Fonctionnement</strong></h1>
+      <h2 class="title"><strong>Fonctionnement</strong></h2>
       <div class="fonctionnement">
         <div class="choose">
           <p>1</p>
           <i class="fas fa-mobile-alt"></i>
-          <h4>Choisissez un restaurant</h4>
+          <h3>Choisissez un restaurant</h3>
         </div>
         <div class="choose">
           <p>2</p>
           <i class="fas fa-bars"></i>
-          <h4>Composez votre menu</h4>
+          <h3>Composez votre menu</h3>
         </div>
         <div class="choose">
           <p>3</p>
           <i class="fas fa-store"></i>
-          <h4>Dégustez au restaurant</h4>
+          <h3>Dégustez au restaurant</h3>
         </div>
       </div>
-      <h1 class="title"><strong>Restaurants</strong></h1>
+      <h2 class="title"><strong>Restaurants</strong></h2>
       <div class="Restaurants">
         <div class="resto">
           <div class="new">Nouveau</div>
@@ -85,7 +88,10 @@
                 <h4>La palette du goût</h4>
                 <h5>Ménilmontant</h5>
               </div>
-              <i class="fill far fa-heart fa-2x"></i>
+              <div class="like">
+                <i class="empty far fa-heart"></i>
+                <i class="fill fas fa-heart"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -104,7 +110,10 @@
                 <h4>La note enchantée</h4>
                 <h5>Charonne</h5>
               </div>
-              <i class="fill far fa-heart fa-2x"></i>
+              <div class="like">
+                <i class="empty far fa-heart"></i>
+                <i class="fill fas fa-heart"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -119,7 +128,10 @@
                 <h4>A la française</h4>
                 <h5>Cité Rouge</h5>
               </div>
-              <i class="fill far fa-heart fa-2x"></i>
+              <div class="like">
+                <i class="empty far fa-heart"></i>
+                <i class="fill fas fa-heart"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -135,7 +147,10 @@
                 <h4>Le délice des sens</h4>
                 <h5>Folie-Méricourt</h5>
               </div>
-              <i class="fill far fa-heart fa-2x"></i>
+              <div class="like">
+                <i class="empty far fa-heart"></i>
+                <i class="fill fas fa-heart"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -143,10 +158,7 @@
       </div>
     </section>
     <footer>
-      <img 
-      class="logof"
-      alt="Logo Oh My Food blanc" 
-      src="images/logo/ohmyfoodwhite.svg" />
+      <p class="logof blanc">ohmyfood</p>
       <div>
         <div class="footerelement">
           <i class="fas fa-utensils"></i>
